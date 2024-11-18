@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('bg.jpg') no-repeat center center/cover; /* Задний фон для всего сайта */
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-size: cover
+}
+
+.logo img {
+    height: 50px; /* Размер логотипа */
+    position: fixed;
+    top: 20px; 
+    left: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px; /* Расстояние между элементами меню */
+}
+
+.navbar a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+.featured-dishes {
+    padding: 20px;
+    text-align: center;
+}
+.featured-dishes h2 {
+    color: gold;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px; /* Расстояние между блюдами */
+}
+
+.dish img {
+    width: 400px; /* Полная ширина */
+    height: 300px; /* высота */
+    border-radius: 8px; /* Закругление углов */
+    margin: 10px;
+    border: 2px solid white;
+}
+.dish h3 {
+    margin: 10px 0 5px;
+    color: gold
+}
+
+.dish p {
+    color: white; /* Цвет описания */
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.promotion-background p {
+    color: white;
+}
+
+.promotion-background h3 {
+    color: white;
+}
+
+
+.promotion-background {
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-size: cover;
+    position: relative;
+}
+.promotion-background-bg  {
+    background: url(clo.png);
+    background-position-x: 50%;
+    background-position-y: -10%;
+    background-repeat: no-repeat;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation {
+    0% {
+        background-position-y: -30% ;
+    }
+    100% {
+        background-position-y: 100%;
+    }
+
+}
+
+
+.clock {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url(vremia.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 40px;
+    top: -400px;
+}
+
+.clock-animation {
+    animation-name: animation-clock;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation-clock {
+    0% {
+        top: -400px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+
+.promotion-family p {
+    color: white;
+}
+.promotion-family h3 {
+    color: white;
+}
+.promotion-family {
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-size: cover;
+    position: relative;
+}
+.promotion-family-bg {
+    background: url(fon.jpg);
+    background-position-x: 50%;
+    background-position-y: -10%;
+    background-repeat: no-repeat;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation {
+    0% {
+        background-position-y: -30% ;
+    }
+    100% {
+        background-position-y: 100%;
+    }
+
+}
+
+
+.rodn {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 40px;
+    top: -700px;
+}
+
+.rodn-animation {
+    animation-name: rodn-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rodn-animation {
+    0% {
+        top: -700px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+
+
+
+
+
+.header-title {
+    color: orange; /* Другой цвет для заголовка */
+    margin: 0;
+    font-size: 2.5em; /* Размер шрифта */
+    text-align: center;
+}
+
+.section-title {
+    text-align: center; /* Центрируем заголовок секции */
+    color: white; /* Другой цвет для заголовка секции */
+    font-size: 2em; /* Размер шрифта секции */
+    margin: 20px 0;
+}
+
+.button-container {
+    position: absolute; /* Абсолютное позиционирование кнопок */
+    top: 20px; /* Расстояние от верхней части */
+    right: 20px; /* Расстояние от правой части */
+    display: flex;
+    gap: 10px; /* Промежуток между кнопками */
+}
+.button {
+    background-color: #2196F3; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Изменено для более компактного вида */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+}
+.button:hover {
+    background-color: #1976D2; 
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background: url('bg.jpg') no-repeat center center/cover;
+}
+h1 {
+    color: #f8b400;
+}
+.recipe-image {
+    max-width: 60%; 
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+.recipe-content {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-content h2 {
+color: gold;
+}
+.recipe-content p {
+    color: white;
+}
+
+
+.registration-form {
+    width: 320px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e99b36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.registration-form h2 {
+    color: gold;
+}
+
+
+.knop {
+    right: 40px;
+}
+.knopka {
+    right: 40px;
+}

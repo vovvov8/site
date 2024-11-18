@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Button1.css">
+    <title>Ресторан</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="logo.png" alt="Логотип">
+        </div>
+        <div class="button-container">
+
+            <button class="button" onclick="getLocation()">Показать локацию</button>
+            <div id="location"></div>
+        
+            <script>
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        document.getElementById("location").innerHTML = "GeoAPI не поддерживается вашим браузером.";
+                    }
+                }
+        
+                function showPosition(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    document.getElementById("location").innerHTML = "Широта: " + latitude + ", Долгота: " + longitude;
+                }
+            </script>
+            
+            <a href="BRO.html" class="button" target="_blank">Бронь</a>
+            <a href="BOOK.html" class="button" target="_blank">Книга жалоб и пожеланий</a>
+        </div>
+    </header>
+    <h1 class="header-title">Добро пожаловать в наш ресторан!</h1>
+    <section>
+        <h2 class="section-title">Наши акции и скидки</h2>
+        <div>
+            <label class="knop">
+                <input type="checkbox" class="animation-on">
+                <span class="slider"></span>
+            </label>
+        </div> 
+        <div class="promotion-background">
+            <h3>Счастливые часы!</h3>
+            <p>Каждый день с 16:00 до 18:00 на все напитки 50% скидка!</p>
+            <div class="clock "></div>
+        </div>
+        <div>
+            <label class="knopka">
+                <input type="checkbox" class="animation-yes">
+                <span class="slid"></span>
+            </label>
+        </div> 
+        <div class="promotion-family">
+            <h3>Семейный ужин</h3>
+            <p>При заказе блюд на сумму более 3000 руб. - подарок для ребенка!</p>
+            <div class="rodn "></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="script2.js"></script>  
+    </section>
+    <main class="featured-dishes">
+        <h2>Блюда сезона</h2>
+        <div class="dish-grid">
+            <div class="dish">
+                <a href="img1.html">
+                <img src="le.jpg" alt="Блюдо 1" />
+                </a>
+                <h3>Куриные ножки с апельсинами и мёдом</h3>
+                <p>Сочные куриные ножки, запеченные до золотистой корочки с пикантным сочетанием сладкого меда и освежающего апельсина.</p>
+            </div>
+            <div class="dish">
+                <a href="img2.html">
+                <img src="los.jpg" alt="Блюдо 2" />
+            </a>
+                <h3>Лосось с овощами</h3>
+                <p>Нежное филе лосося, приготовленное с сочными овощами –  легкое и полезное блюдо, богатое витаминами и вкусом.</p>
+            </div>
+            <div class="dish">
+                <a href="img3.html">
+                <img src="sa.jpg" alt="Блюдо 3" />
+            </a>
+                <h3>Салат из запечёных корнеплодов</h3>
+                <p>Сладковато-пряный салат из запеченных корнеплодов – яркое сочетание вкусов и текстур,  идеальное блюдо для холодного времени года.</p>
+            </div>
+            <div class="dish">
+                <a href="img4.html">
+                <img src="su.jpg" alt="Блюдо 4" />
+            </a>
+                <h3>Суп-пюре из тыквы и чечевицы</h3>
+                <p>Кремовый,  насыщенный суп-пюре из тыквы и чечевицы –  яркий вкус осени с приятной текстурой и нежным ароматом специй.</p>
+            </div>
+            <div class="dish">
+                <a href="img5.html">
+                <img src="gu.jpg" alt="Блюдо 5" />
+            </a>
+                <h3>Венгерский гуляш</h3>
+                <p>Нежное, пряное и сытное блюдо венгерской кухни – гуляш из говядины, приготовленный с паприкой и другими ароматными специями.</p>
+            </div>
+            <div class="dish">
+                <a href="img6.html">
+                <img src="gasp.jpg" alt="Блюдо 5" />
+            </a>
+                <h3>Гаспачо с клубникой</h3>
+                <p>Освежающий и необычный гаспачо с клубникой – легкий суп с ярким вкусом и ароматом свежих ягод.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+    
